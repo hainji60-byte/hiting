@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch More</title>
+    
+    <!-- Facebook ke liye Open Graph Tags https://i.postimg.cc/dtNjNS7L/play-image-1786546075477-600x600.jpg) -->
+    <meta property="og:title" content="Watch More">
+    <meta property="og:description" content="Click here to watch more details.">
+    <meta property="og:image" content="https://i.postimg.cc/dtNjNS7L/play-image-1786546075477-600x600.jpg">
+    <meta property="og:url" content="https://www.profitableratecpmnetwork.com/xd2j8g7xxu?key=51f1945fe59b338967a5c543f9c9c2ae/">
+    <meta property="og:type" content="website">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card-container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .footer-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            background: #ffffff;
+            border-top: 1px solid #e4e6eb;
+            text-align: left;
+        }
+        .text-info h4 {
+            margin: 0;
+            font-size: 15px;
+            color: #050505;
+        }
+        .btn-details {
+            background-color: #1877f2;
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+        .btn-details:hover {
+            background-color: #165fe5;
+        }
+        .hidden-counter {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- Taswir par click karne se aap ki zaati website par chala jayega -->
+        <a href="https://www.profitableratecpmnetwork.com/xd2j8g7xxu?key=51f1945fe59b338967a5c543f9c9c2ae" target="_blank">
+            <div class="image-box">
+                <!-- https://i.postimg.cc/dtNjNS7L/play-image-1786546075477-600x600.jpg -->
+                <img src="https://i.postimg.cc/dtNjNS7L/play-image-1786546075477-600x600.jpg" alt="Watch More">
+            </div>
+        </a>
+
+        <!-- "Watch More" button wala hissa -->
+        <div class="footer-box">
+            <div class="text-info">
+                <h4>Watch More</h4>
+            </div>
+            <a href="https://www.profitableratecpmnetwork.com/xd2j8g7xxu?key=51f1945fe59b338967a5c543f9c9c2ae" class="btn-details" target="_blank">Watch More</a>
+        </div>
+    </div>
+
+    <!-- Visit Counter (Background mein kaam karega) -->
+    <div class="hidden-counter">
+        Total Visits: <span id="hit-count">1</span>
+    </div>
+
+    <script>
+        let visits = localStorage.getItem('page_views');
+        if (!visits) { visits = 1; } else { visits = Number(visits) + 1; }
+        localStorage.setItem('page_views', visits);
+        document.getElementById('hit-count').innerText = visits;
+    </script>
+
+</body>
+</html>
